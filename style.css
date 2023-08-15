@@ -1,3 +1,126 @@
+@font-face {
+  font-family: 'designer';
+  src: url('Fonts/designer-webfont.woff2') format('woff2'),
+       url('Fonts/designer-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'codeBold';
+  src: url('Fonts/code_bold-webfont.woff2') format('woff2'),
+       url('Fonts/code_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'codeLight';
+  src: url('Fonts/code_light-webfont.woff2') format('woff2'),
+       url('Fonts/code_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayBlackRevo';
+  src: url('Fonts/walkway_black_revoblique-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_black_revoblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayBlack';
+  src: url('Fonts/walkway_black-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayRevoBold';
+  src: url('Fonts/walkway_bold_revoblique-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_bold_revoblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayBold';
+  src: url('fonts/walkway_bold-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayCondSemiBold';
+  src: url('Fonts/walkway_condensed_semibold-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_condensed_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'walkwayCond';
+  src: url('Fonts/walkway_condensed-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_condensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'walkway';
+  src: url('Fonts/walkway_semibold-webfont.woff2') format('woff2'),
+       url('Fonts/walkway_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+html {
+  font-family: 'walkway', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+  background-color: #120D38;
+  color: #C0C0C0;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-icon{
+  width: 48px;
+}
+
+h2,
+h3,
+h4, 
+h5,
+h6 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  
+  font-size: 3.5rem;
+}
+
 .wave {
     animation-name: wave-animation;  
     animation-duration: 2.5s;        
