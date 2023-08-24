@@ -13,26 +13,17 @@ html {
 }
 
 .section {
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  padding: ;
+
 }
 
-main {
-  scroll-snap-type: mandatory;
-  height: 100vh;
-}
 
 li{
   list-style: none;
 }
 
 
-#logo{
-  width: 80px;
-  height: 80px;
-}
 
 
 h2,
@@ -40,7 +31,7 @@ h3,
 h4, 
 h5,
 h6 {
-color: #C0C0C0
+color: #C0C0C0;
 font-family: 'Bungee', cursive;
 }
 
@@ -74,8 +65,7 @@ h1 {
   .logo{
     float: left;
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 80px;
   }
 
 
