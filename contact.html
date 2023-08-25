@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Get in Touch</title>
+
+<head>
+    <title>Get in Touch</title>
     <link rel="shortcut icon" href="Icons and Logo/Lgog.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e834a5ebb4.js" crossorigin="anonymous"></script>
-    </head>
+</head>
+
 </html>
 <nav class="nav-bar">
     <img src="Icons and Logo/Lgog.png" alt="Logo with an E in it" class="logo">
@@ -38,14 +40,74 @@
 
 <div class="contact section">
     <h2 id="contact">Get in Touch</h2>
+        <li class="info-item">
+            <h4>Quick Chats:</h4>
+            <p>Reach out on WhatsApp for speedy communication that gets things rolling!</p>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/27716883549" target="_blank"><button class="whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i> Chat on WhatsApp</button>
+            </a>
+
     <div class="socials">
+        <h4>Online Vibes</h4>
+        <p>Dive into the web-based dimension of my projects and connections.</p>
         <ul class="online-spaces">
             <li class="social-item" title="Connect on LinkedIn">
-               <a class="social-link" href="www.linkedin.com/in/ellene-van-der-meijden-0aa4211b0"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="social-link" href="www.linkedin.com/in/ellene-van-der-meijden-0aa4211b0"> <i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
             </li>
             <li class="social-item" title="Check Out my GitHub">
-                <a class="social-link" href="https://github.com/ellenevdm"> <i class="fa-brands fa-github fa-2xl"></i></a>
-             </li>
+                <a class="social-link" href="https://github.com/ellenevdm"> <i
+                        class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+
         </ul>
     </div>
+
+    <div class="contact-form">
+        <h3>Message Portal</h3>
+        <p>Let's start a digital dialogue! Send me an email by simply filling out the form below</p>
+        <form class="form-layout">           
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname"   name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">Email Address: <br><input type="email" id="email" name="email" required></label>
+
+            <legend>Are you representing a business?</legend>
+                <input type="radio" name="isBusiness" id="yes" value="yes"/>
+                <label for="yes">Yes</label>
+                <br>
+                <input type="radio" name="isBusiness" id="no" value="no"/>
+                <label for="no">No</label>
+                    <div class="conditional" data-cond-option="isBusiness" data-cond-value="yes">
+                        <label for="businessName">Business Name:<br>
+                        <input type="text" id="businessName" name="businessName"/></label>
+                    </div>
+                <label for="message">Your Message</label><br>
+                <textarea id="message" name="message" rows="15" cols="60">Hi Ellené...</textarea>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <p class="copyright">Created by Ellené Van Der Meijden. <i class="fa-regular fa-copyright fa-xs"></i> 2023</p>
+        <ul class="footer-socials">
+
+            <li class="footer-social" title="Connect on LinkedIn">
+                <a class="footer-link" href="www.linkedin.com/in/ellene-van-der-meijden-0aa4211b0"> <i
+                        class="fa-brands fa-linkedin "></i></i></a>
+            </li>
+            <li class="footer-social" title="Check Out my GitHub">
+                <a class="footer-link" href="https://github.com/ellenevdm"> <i
+                        class="fa-brands fa-github "></i></a>
+            </li>
+        </ul>
+    </footer>
 </div>
