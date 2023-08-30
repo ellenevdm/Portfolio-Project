@@ -8,90 +8,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Press+Start+2P&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Press+Start+2P&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e834a5ebb4.js" crossorigin="anonymous"></script>
 </head>
 
-</html>
-<nav class="nav-bar">
-    <img src="Icons and Logo/Lgog.png" alt="Logo with an E in it" class="logo">
-    <ul class="navigation-items">
-        <li class="navigation-item">
-            <a href="index.html#about-me"><i class="fa-solid fa-address-card"></i>
-                About Me</a>
-        </li>
-        <li class="navigation-item">
-            <a href="index.html#projects"><i class="fa-solid fa-folder-open"></i>
-                My Projects</a>
-        </li>
-        <li class="navigation-item">
-            <a href="index.html#skills"><i class="fa-solid fa-lightbulb"></i>
-                My skills</a>
-        </li>
-        <li class="navigation-item" class="contact">
-            <a href="/"><i class="fa-solid fa-envelope"></i>
-                Get in Touch</a>
-        </li>
-    </ul>
-</nav>
 
-
-<div class="contact section">
-    <h2 id="contact">Get in Touch</h2>
-        <li class="info-item">
-            <h4>Quick Chats:</h4>
-            <p>Reach out on WhatsApp for speedy communication that gets things rolling!</p>
-            <a aria-label="Chat on WhatsApp" href="https://wa.me/27716883549" target="_blank"><button class="whatsapp">
-                    <i class="fa-brands fa-whatsapp fa-lg"></i> Chat on WhatsApp</button>
-            </a>
-
-    <div class="socials">
-        <h4>Online Vibes</h4>
-        <p>Dive into the web-based dimension of my projects and connections.</p>
-        <ul class="online-spaces">
-            <li class="social-item" title="Connect on LinkedIn">
-                <a class="social-link" href="www.linkedin.com/in/ellene-van-der-meijden-0aa4211b0"> <i
-                        class="fa-brands fa-linkedin fa-2xl"></i></a>
+<body>
+    <nav class="side-bar">
+        <img src="Icons and Logo/Lgog.png" alt="Logo with an E in it" class="logo">
+        <ul class="navigation-items">
+            <li class="navigation-item">
+                <a href="index.html#about-me"><i class="fa-solid fa-address-card"></i>
+                    About Me</a>
             </li>
-            <li class="social-item" title="Check Out my GitHub">
-                <a class="social-link" href="https://github.com/ellenevdm"> <i
-                        class="fa-brands fa-github fa-2xl"></i></a>
+            <li class="navigation-item">
+                <a href="index.html#projects"><i class="fa-solid fa-folder-open"></i>
+                    My Projects</a>
             </li>
-
+            <li class="navigation-item">
+                <a href="index.html#skills"><i class="fa-solid fa-lightbulb"></i>
+                    My skills</a>
+            </li>
+            <li class="navigation-item" class="contact">
+                <a href="/"><i class="fa-solid fa-envelope"></i>
+                    Get in Touch</a>
+            </li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="contact-form">
-        <h3>Message Portal</h3>
-        <p>Let's start a digital dialogue! Send me an email by simply filling out the form below</p>
-        <form class="form-layout">           
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname"   name="fname" required><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="email">Email Address: <br><input type="email" id="email" name="email" required></label>
-
-            <legend>Are you representing a business?</legend>
-                <input type="radio" name="isBusiness" id="yes" value="yes"/>
-                <label for="yes">Yes</label>
-                <br>
-                <input type="radio" name="isBusiness" id="no" value="no"/>
-                <label for="no">No</label>
-                    <div class="conditional" data-cond-option="isBusiness" data-cond-value="yes">
-                        <label for="businessName">Business Name:<br>
-                        <input type="text" id="businessName" name="businessName"/></label>
-                    </div>
-                <label for="message">Your Message</label><br>
-                <textarea id="message" name="message" rows="15" cols="60">Hi Ellené...</textarea>
-            
-        </form>
-    </div>
+    <main>
+        <div class="contact section">
+            <h1 id="contact">Get in Touch</h1>
+            <div class="social-container">
+                <div class="whatsapp social-box">
+                    <h4>Quick Chats:</h4>
+                    <p>Reach out on WhatsApp for speedy communication that gets things rolling!</p>
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/27716883549" target="_blank"><button
+                            class="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> WhatsApp Me</button>
+                    </a>
+                </div>
 
 
+                <div class="social-box socials">
+                    <h4>Online Vibes</h4>
+                    <p>Dive into the web-based dimension of my projects and connections.</p>
+                    <ul class="online-spaces">
+                        <li class="social-item" title="Connect on LinkedIn">
+                            <a class="social-link" href="www.linkedin.com/in/ellene-van-der-meijden-0aa4211b0"> <i
+                                    class="fa-brands fa-linkedin "></i></a>
+                        </li>
+                        <li class="social-item" title="Check Out my GitHub">
+                            <a class="social-link" href="https://github.com/ellenevdm"> <i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Message Portal</h3>
+                <p>Let's start a digital dialogue! Send me an email by simply filling out the form below</p>
+                <div>
+
+                    <form class="form-layout" action="mailto:ellene.github@gmail.com" method="get" enctype="text/plain">
+                        <div class="part1">
+                            <div class="form-group">
+                                <label for="fname">Your First Name:</label>
+                                <input type="text" id="fname" name="fname" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Your Last name:</label>
+                                <input type="text" id="lname" name="lname" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"> Your Email Address: </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+
+                        </div>
+                        <div class="part2">
+                            <label for="subject">Subject:</label>
+                            <input type="text" name="subject" id="subject"><br>
+                            <label for="message">Your Message</label><br>
+                            <textarea id="message" name="message" rows="15" cols="50"
+                                placeholder="Hello there, What can I help you with today."></textarea>
+                            <br>
+                            <input type="submit" value="send" id="submit-button">
+                        </div>
+                </div>
+                </form>
+            </div>
 
 
+        </div>
+    </main>
 
 
 
@@ -105,9 +121,12 @@
                         class="fa-brands fa-linkedin "></i></i></a>
             </li>
             <li class="footer-social" title="Check Out my GitHub">
-                <a class="footer-link" href="https://github.com/ellenevdm"> <i
-                        class="fa-brands fa-github "></i></a>
+                <a class="footer-link" href="https://github.com/ellenevdm"> <i class="fa-brands fa-github "></i></a>
             </li>
         </ul>
     </footer>
-</div>
+
+    </div>
+</body>
+
+</html>

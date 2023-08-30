@@ -1,11 +1,16 @@
 
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 html {
   font-family: 'Space Mono', monospace;
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  text-align: center;
+  
   scroll-behavior: smooth;
   background-color: #000000;
   color: #C0C0C0;
@@ -13,7 +18,13 @@ html {
 }
 
 body {
+  padding: 60px 60px 5px 60px;
+}
 
+main{
+  display: block;
+  padding-left: 200px;
+  
 }
 
 
@@ -21,9 +32,7 @@ li{
   list-style: none;
 }
 
-a {
 
-}
 button {
 height: 60px;
 min-width: 200px;
@@ -42,12 +51,13 @@ h5,
 h6 {
 color: #C0C0C0;
 font-family: 'Bungee', cursive;
+line-height: 2;
 }
 
 h1 {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Spice', cursive;
   font-size: 3.5rem;
-  color: #C0C0C0;
+  line-height: 2;
 }
 
 .wave {
@@ -69,53 +79,44 @@ h1 {
     100% { transform: rotate( 0.0deg) }
   }
 
-.section {
-  justify-content: center;
-  align-items: center;
 
-}
   /*Navigation*/
-  .logo{
-    float: left;
-    margin-left: 20px;
-    width: 60px;
-
+  .side-bar .logo{
+    text-align: center;
+    width: 80px;
+    display: block;
   }
 
 
-.nav-bar a{
-  float: left;
-  color: #C0C0C0;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
 
 
 
-.nav-bar {
+
+.side-bar {
   position: fixed;
-  width: 100%;
-  background-color: black;
-  text-align: left;
- height: 60px;
   display: flex;
-  justify-content: space-between;
-  top:0;
-  left: 0;
-  overflow: hidden;
-  z-index: 9999;
+  flex-direction: column;
+  justify-content: center;
+  align-content:baseline;
+  background: rgba(76, 175, 80, 0.3);
+  left: 0px;
+  width: 10%;
+  height: 50%;
   
 }
-.navigation-items {
-  display: flex;
-  text-align: left  ;
-  margin: 0px;
-}
-.navigation-item {
-  display: inline-block;
-  padding: 10px 9px;
-  justify-content: space-between;
+
+.navigation-item  a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 18px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  transition: .4s;
+  text-decoration: none;
 }
 .space {
   height: 60px;
@@ -131,13 +132,27 @@ h1 {
   color: #C0C0C0;
 }
 
+.section {
+  display: block;
+  margin: 0;
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
 
+
+}
 
 /*Skills*/
+.skills {
+  text-align: center;
+
+}
 .skill-list{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 10px;
 }
 
 .skill-row{
@@ -145,11 +160,12 @@ h1 {
   justify-content: space-around;
 }
 .skill-icon {
-  font-size: 3rem !important;
+  font-size: 4rem !important;
+  margin: 10px;
 }
 
 .skill-name{
-  visibility: hidden;
+
 }
 .skill-icon:hover{
   
@@ -162,15 +178,119 @@ h1 {
 
 /*Projects*/
 .proj {
-
-}
-.proj-container{
-
+  display: block;
 }
 
+.proj-container {
+  display: block;
+  width: auto;
+  text-align: center;
+}
 .proj-box {
 
+ display: flex;
+ background-color: blue;
+ margin-top: 40px;
+ padding: 50px;
+ max-height: 500px;
+ justify-content: space-between;
 }
+.pawfectly {
+}
+.proj-description {
+  width: 50%;
+  padding: 20px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+.box{
+  padding: 10px;
+}
+.proj-wording {
+  text-align: justify;
+}
+
+.proj-wording h3 {
+  text-align: center;
+}
+.lang-section {
+  
+}
+.proj-lang li{
+  display: inline-block;
+
+
+
+}
+.proj-lang i{
+  font-size: 1.8rem;
+  display: inline-block !important;
+  
+}
+.fa-brands {
+}
+.fa-css3-alt {
+}
+.fa-html5 {
+}
+.site-section {
+  width: 50%;
+  height:500;
+}
+.website {
+  width: 100%;
+  height: 100%;
+}
+.proj-buttons button{
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 45%;
+  font-family: bungee, cursive;
+}
+.proj-buttons button i{
+  font-size: 1.5;
+}
+.proj-link {
+}
+.fa-solid {
+}
+.fa-up-right-from-square {
+}
+.fa-github {
+}
+.design-system {
+}
+.credit-checker {
+}
+.no-website {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-self: center;
+}
+.js-proj{
+  width: 50%;
+  margin: 30px;
+}
+.js-proj-description{
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+
+
+}
+
+.fa-js {
+}
+.mystery-organism {
+}
+
+
 
 
 
@@ -197,3 +317,124 @@ justify-content: center;
 .footer-social{
   margin: .5rem;
 }
+
+/*contact page*/
+.contact {
+  display: block;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.social-item{
+  display: inline-block  !important;
+  font-size:2rem;
+  padding: 10px;
+  
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+.social-box {
+  max-width: 500px;
+  border: 1px solid blue;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  margin: 0px 15px;
+}
+.whatsapp-button{
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-flex;
+  font-family: 'space mono', monospace;
+  background-color: 	#4AC759;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  margin: 10px;
+}
+.whatsapp-button i{
+
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.whatsapp {
+  text-align: center;
+}
+  /* conact-form*/
+
+  .contact-form{
+    background-color: darkred;
+    max-width: 80%;
+    padding: 3em;
+
+    margin: 10px;
+  
+    text-align: center;
+  }
+  .conditional {
+
+  }
+
+  form {
+    display: block;
+    
+    
+    color: #000000;
+    background-color: white;
+    padding: 10px;
+    
+
+  }
+.form-layout{
+
+
+
+}
+  .part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .part2 {
+
+  }
+  input[type="text"],
+  input[type="email"]{
+    height: 2rem;
+    width: ;
+    font-size: 1rem;
+    color: black;
+    border-style: none;
+    border-bottom: 1px solid black;
+    background: none;
+    font-family: 'Space Mono',monospace;
+  }
+  input[type="radio"]{
+    display: inline;
+  }
+
+  textarea {
+    font-family: 'Space Mono',monospace;
+  }
+  #submit-button {
+    width: 300px;
+    height: 3rem;
+  }
+
+  label {
+    font-family: 'Space Mono',monospace;
+    font-size: 1.rem;
+    font-weight: bold;
+  }

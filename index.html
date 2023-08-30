@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Press+Start+2P&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Press+Start+2P&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e834a5ebb4.js" crossorigin="anonymous"></script>
 
 
@@ -20,15 +22,17 @@
 <body>
     <!--Navigation Bar-->
 
-    <nav class="nav-bar">
-        <img src="Icons and Logo/Lgog.png" alt="Logo with an E in it" class="logo">
+    <div class="side-bar">
+        
+        <img src="Icons and Logo/Lgog.png" alt="Logo with an E in it" id="logo">
+        <nav class="nav-bar">
         <ul class="navigation-items">
             <li class="navigation-item">
                 <a href="#about-me"><i class="fa-solid fa-address-card"></i>
                     About Me</a>
             </li>
             <li class="navigation-item">
-                <a href="#projects"><i class="fa-solid fa-folder-open"></i>
+                <a href="#projects" ><i class="fa-solid fa-folder-open"></i>
                     My Projects</a>
             </li>
             <li class="navigation-item">
@@ -41,36 +45,40 @@
             </li>
         </ul>
     </nav>
+</div>
 
     <!--<div class="space"></div>
     Banner Section-->
-
+    <main>
     <div class="banner section">
+        
         <h1><span class="wave">👋</span>Hi there! <br>
             I'm Ellené!</h1>
 
         <h2>I'm a Front-End Developer in Progress</h2>
+         
+        <!--ABout me section-->
+        <div class="about section">
+            <h2 id="about-me">A little bit about me</h2>
 
+            <p>
+                I am on an exciting journey into the digital world, I'm on a mission to become a
+                front-end
+                developer. With a passion for creating user-friendly websites that bring information to everyone,
+                I'm
+                diving into a front-end developer course to turn this dream into reality. When I'm not coding,
+                you'll
+                find me enjoying time with my dog Luna and my two cats, Tabs and Grey. I love turning challenges
+                into
+                opportunities while crafting functional websites that make a difference.
+            </p>
+        </div>
     </div>
-    </header>
-    <main>
-        <div class="container">
-            <!--ABout me section-->
-            <div class="about section">
-                <h2 id="about-me">A little bit about me</h2>
 
-                <p>
-                    I am on an exciting journey into the digital world, I'm on a mission to become a
-                    front-end
-                    developer. With a passion for creating user-friendly websites that bring information to everyone,
-                    I'm
-                    diving into a front-end developer course to turn this dream into reality. When I'm not coding,
-                    you'll
-                    find me enjoying time with my dog Luna and my two cats, Tabs and Grey. I love turning challenges
-                    into
-                    opportunities while crafting functional websites that make a difference.
-                </p>
-            </div>
+    
+        
+        <div class="container">
+            
 
             <div class="skills section">
                 <h2 id="skills">My skills and toolbox</h2>
@@ -138,35 +146,41 @@
 
                         <div class="proj-description">
 
-                            <div class="proj-wording">
+                            <div class="proj-wording box">
                                 <h3>Pawfectly Pampered</h3>
 
                                 <p>Merging my passion for pets with front-end development, I created a captivating
                                     online
                                     hub for "Pawfectly Pampered," uniting aesthetics with function.</p>
                             </div>
-                            <div class="lang-section">
+                            <div class="lang-section box">
                                 <h4>Languages Used</h4>
                                 <ul class="proj-lang">
                                     <li><i class="fa-brands fa-css3-alt  "></i></li>
                                     <li><i class="fa-brands fa-html5  "></i></li>
                                 </ul>
                             </div>
-                        </div>
 
-                        <div class="site-section">
-                            <img src="Projects/Pawfectly-Pampered.png" alt="Snapshot of Pawfectly Pampered website"
-                                class="website-img">
-                            <div class="proj-buttons">
+                            <div class="proj-buttons box">
                                 <a href="https://ellenevdm.github.io/pawfectlypampered/" target="_blank">
-                                    <button class="proj-link"><i class="fa-solid fa-up-right-from-square  "></i>Visit
+                                    <button class="proj-link"><i class="fa-solid fa-up-right-from-square  "></i>
                                         Website</button>
                                 </a>
                                 <a class="proj-link" href="https://github.com/ellenevdm/pawfectlypampered"
                                     target="_blank">
-                                    <button><i class="fa-brands fa-github  "></i>Check it out on
+                                    <button><i class="fa-brands fa-github  "></i>
                                         GitHub</button></a>
                             </div>
+                        </div>
+
+                        <div class="site-section">
+
+
+                            <iframe src="https://ellenevdm.github.io/pawfectlypampered/" class="website"></iframe>
+
+
+
+
                         </div>
                     </div>
 
@@ -177,107 +191,97 @@
                     <div class="proj-box design-system">
 
                         <div class="proj-description">
-                            <div class="proj-wording">
+                            <div class="proj-wording box">
                                 <h3>My Website Style Guide</h3>
-                                <p>I shaped "My Website Style Guide," illuminating crucial design elements, showcasing
-                                    my
-                                    devotion to user-centric digital experiences.</p>
+                                <p>As one of my first projects using CSS language with HTML, I crafted a basic Website
+                                    Style Guide
+                                    with a color pallette, fonts, and text styles </p>
                             </div>
 
-                            <div class="lang-section">
+                            <div class="lang-section box">
                                 <h4>Languages Used</h4>
                                 <ul class="proj-lang">
                                     <li><i class="fa-brands fa-css3-alt "></i></li>
                                     <li><i class="fa-brands fa-html5 "></i></li>
                                 </ul>
                             </div>
-
-                        </div>
-
-                        <div class="site-section">
-                            <img src="Projects/My-Website-Style-Guide.png" alt="Snapshot of Pawfectly Pampered website"
-                                class="website-img">
-                            <div class="proj-buttons">
+                            <div class="proj-buttons box">
                                 <a class="proj-link" href="https://ellenevdm.github.io/websitedesignproject/"
                                     target="_blank">
-                                    <button><i class="fa-solid fa-up-right-from-square  "></i>Visit
+                                    <button><i class="fa-solid fa-up-right-from-square  "></i>
                                         Website</button>
                                 </a>
                                 <a class="proj-link" href="https://github.com/ellenevdm/websitedesignproject"
                                     target="_blank">
-                                    <button><i class="fa-brands fa-github  "></i>Check it out on
+                                    <button><i class="fa-brands fa-github  "></i>
                                         GitHub</button></a>
                             </div>
+
+                        </div>
+                        <div class="site-section">
+                            <iframe src="https://ellenevdm.github.io/websitedesignproject/" class="website"></iframe>
+
+
+
                         </div>
                     </div>
 
 
+                    <div class="no-website proj-box">
+
+                        <div class=" credit-checker js-proj">
+                            <div class="js-proj-description">
+                                <div class="proj-wording box">
+                                    <h3>Credit Card Checker</h3>
+                                    <p>
+                                        
+                                        In the Codecademy project "Credit Card Checker," I used JavaScript to implement the <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a>, strengthening credit card validity with backend logic.</p>
+                                </div>
 
 
-                    <div class="proj-box credit-checker no-website">
-                        <div class="proj-description">
-                            <div class="proj-wording">
-                                <h3>Credit Card Checker</h3>
-                                <p>
-                                    In the Codecademy challenge project, "Credit Card Checker," I harnessed JavaScript
-                                    to
-                                    bring the <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a>
-                                    to
-                                    life, fortifying credit card validity through purposeful backend logic.</p>
+                                <div class="lang-section box">
+                                    <h4>Languages Used</h4>
+                                    <ul class="proj-lang">
+                                        <li><i class="fa-brands fa-js  "></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="proj-buttons box">
+                                    <a class="proj-link" href="https://github.com/ellenevdm/credit-card-checker-js"
+                                        target="_blank">
+                                        <button><i class="fa-brands fa-github  "></i>GitHub</button></a>
+                                </div>
                             </div>
 
-
-                            <div class="lang-section">
-                                <h4>Languages Used</h4>
-                                <ul class="proj-lang">
-                                    <li><i class="fa-brands fa-js  "></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="site-section">
-
-                            <div class="proj-buttons">
-                                <a class="proj-link" href="https://github.com/ellenevdm/credit-card-checker-js"
-                                    target="_blank">
-                                    <button><i class="fa-brands fa-github  "></i>Check it out on GitHub</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="proj-box mystery-organism">
-                        <div class="proj-description">
-                            <div class="proj-wording">
-                                <h3>Mysterious Organism</h3>
-
-                                <p>
-                                    In JavaScript, I took on the fascinating "Mysterious Organism" project. I crafted
-                                    object
-                                    simulations of DNA using a smart factory function and internal methods. While it's
-                                    backend-focused, you can explore the JavaScript code on my GitHub.</p>
-                            </div>
-
-
-
-                            <div class="lang-section">
-                                <h4>Languages Used</h4>
-                                <ul class="proj-lang">
-                                    <li><i class="fa-brands fa-js  "></i>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
 
-                        <div class="site-section">
-                            <div class="proj-buttons">
-                                <a class="proj-link" href="https://github.com/ellenevdm/Mysterious-Organism-Project"
-                                    target="_blank">
-                                    <button><i class="fa-brands fa-github  "></i>Check it out on GitHub</button></a>
+
+                        <div class=" mystery-organism js-proj">
+                            <div class="js-proj-description">
+                                <div class="proj-wording box">
+                                    <h3>Mysterious Organism</h3>
+                                    <p>
+                                        In JavaScript, I tackled the intriguing "Mysterious Organism" project, crafting object simulations of DNA using a smart factory function and internal methods.</p>
+                                </div>
+                                <div class="lang-section box">
+                                    <h4>Languages Used</h4>
+                                    <ul class="proj-lang">
+                                        <li><i class="fa-brands fa-js  "></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="proj-buttons box">
+                                    <a class="proj-link" href="https://github.com/ellenevdm/Mysterious-Organism-Project"
+                                        target="_blank">
+                                        <button><i class="fa-brands fa-github  "></i>GitHub</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
